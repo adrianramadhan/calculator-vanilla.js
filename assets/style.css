@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Dark Theme */
+
+html {
+    color-scheme: dark !important;
+}
+/* Dark Themen */
+
+body {
+    margin: 0px;
+}
+
+.display{
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.displayNumber{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 3em;
+    color: white;
+}
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: right;
+}
+
+.flex-container-row {
+    display: flex;
+}
+
+.button{
+    flex-basis: 25%;
+    border: 1px solid;
+    border-color: initial;
+    background-image: -webkit-linear-gradient(top, rgb(49, 54, 56), rgb(43, 47, 49));
+    background-color: initial;
+    cursor: pointer;
+    text-align: center;
+    padding: 40px;
+    font-size: 1.5em;
+}
+
+.button:hover {
+    font-weight: bold;
+	box-shadow: 0 8px white;
+	transform: translateY(-3px);
+}
+.button:active {
+	background-color: white;
+	box-shadow: 0 5px #407762;
+	transform: translateY(4px);
+}
+
+.negative,
+.operator,
+.equals {
+    background: rgb(185, 130, 29);
+}
+
+.equals {
+    flex-basis: 87.5%;
+}
+
+.card {
+    box-shadow: 10px 10px 8px rgba(160, 160, 160, 0.2);
+    margin:  5% auto;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #333;
+}
+
+.history {
+    width: 80%;
+    margin: 50px auto 0 auto;
+    overflow: scroll;
+ }
+
+ table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+ }
+
+ th,
+td {
+   text-align: center;
+   padding: 16px;
+}
+
+th {
+    background: rgb(185, 130, 29);
+    color: white;
+ }
+
+
+@media only screen and (max-width: 550px) {
+    .button {
+      padding: 15px;
+    }
+
+    .history {
+        width: 100%;
+    }
+  }
+
+  footer {
+    padding: 10px;
+    background-color: rgb(44, 47, 49);
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  footer a {
+    color: white;
+  }
+
+  .love {
+    color: red;
+  }
+
+  .logo {
+    margin: 4px 8px;
+  }
